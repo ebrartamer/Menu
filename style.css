@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+body{
+    background-color: hsl(210, 36%, 96%);
+}
+.menu{
+    padding: 5rem 0;
+}
+.title{
+    text-align: center;
+    letter-spacing: .3rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(15, 15, 35);
+}
+.underline{
+    width: 5rem;
+    height: .25rem;
+    background: goldenrod;
+    margin-left: auto;   
+    margin-right: auto;
+}
+.btn-container{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-btn{
+    font-size: 1rem;
+    margin-left: 1rem;
+    background: transparent;
+    border-color: goldenrod;
+    border-radius: .5rem;
+    color: goldenrod;
+    letter-spacing: .1rem;
+    transition: all .3s linear;
+}
+.filter-btn:hover{
+    background: goldenrod;
+    color: white;
+}
+
+.section-center{
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+    width: 90vh;
+    
+}
+.menu-item{
+    display: grid;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.photo{
+    object-fit: cover;
+    justify-content: center;
+    border-radius: 1vh;
+    border:0.25rem solid goldenrod;
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+
+}
+.item-info header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(15, 15, 35);
+    text-transform: capitalize ;
+    border-bottom: 0.5px dotted rgb(71, 123, 145);
+}
+.price{
+    color: goldenrod;
+}
+.item-text{
+    color: rgb(71, 123, 145);
+    
+}
+@media  screen and (min-width:768px) {
+
+    .photo{
+        height: 175px;
+    }
+}
+@media  screen and (min-width:1200px) {
+    .section-center {
+        width: 95vw;
+        grid-template-columns: 1fr 1fr;
+      }
+    .photo{
+        height: 150px;
+    }
+}
